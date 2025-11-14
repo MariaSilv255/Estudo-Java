@@ -1,0 +1,4 @@
+*.txt linguist-detectable=false
+*.xlsx linguist-detectable=false
+desktop.ini linguist-detectable=false
+*.ini linguist-detectable=false
