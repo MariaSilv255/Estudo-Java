@@ -1,0 +1,13 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+
+public class GlobalParaLocal {
+	public static void main(String[] args) {
+
+		LocalDate d1 = LocalDate.parse("2022-02-01");
+		Instant d2 = Instant.parse("2022-02-01T01:30Z");
+		
+	}
+}

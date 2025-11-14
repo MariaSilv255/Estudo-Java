@@ -1,0 +1,36 @@
+package data_hora;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+
+public class calculso {
+	public static void main(String[] args) {
+		LocalDate d1 = LocalDate.parse("2022-02-01");
+		LocalDateTime d3 = LocalDateTime.parse("2022-02-01T05:32:55");
+		Instant d2 = Instant.parse("2022-02-01T01:30:26Z");
+
+		LocalDate semana_anterior = d1.minusDays(7);
+		LocalDate semana_proxima = d1.plusDays(7);
+		System.out.println("d1" + semana_anterior);
+		System.out.println("d2" + semana_proxima);
+		
+		LocalDateTime semanaAntes = d3.minusDays(7);
+		LocalDateTime semanaProxima = d3.plusDays(7);
+		LocalDateTime semanaHoraAntes = d3.minusHours(2);
+		System.out.println(semanaAntes);
+		System.out.println(semanaProxima);
+		System.out.println(semanaHoraAntes);
+		
+		Instant semanaAntesGlobal = d2.minus(7, ChronoUnit.DAYS);
+		Instant semanaDepoisGlobal = d2.plus(7,ChronoUnit.DAYS);		
+
+			System.out.println(semanaAntesGlobal);
+			System.out.println(semanaDepoisGlobal);
+			
+			Duration t1 = Duration.between(semanaAntesGlobal, semanaDepoisGlobal);
+	}
+
+}

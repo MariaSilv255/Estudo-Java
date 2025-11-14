@@ -1,0 +1,35 @@
+package generics_179;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrintServices{
+
+	List<Integer> itens = new ArrayList<>();
+	
+	public void addValue(Integer value) {
+		itens.add(value);
+	}
+	
+	public Integer first() {
+		if(itens.isEmpty()) {
+			throw new IllegalStateException("Lista esta vazia");
+		}
+		return itens.get(0);
+	}
+	
+	public void print() {
+			System.out.print("[");
+			
+			if (!itens.isEmpty()) {
+				System.out.print(itens.get(0));
+			}
+			
+			for (int i = 1; i < itens.size(); i++) {
+				System.out.print(", " + itens.get(i));
+			}
+			
+			System.out.println("]");
+		}
+	}
+	

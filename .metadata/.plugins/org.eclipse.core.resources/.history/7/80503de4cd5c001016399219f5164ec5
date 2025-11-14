@@ -1,0 +1,36 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class organizando_as_ideaias {
+	public static void main(String[] args) {
+		
+		
+		//no formato iso 8601 passando uma data
+		//datas local
+		LocalDate dataLocal1 = LocalDate.parse("2025-07-09"); //formato padrao
+		LocalDateTime dataLocal2 = LocalDateTime.parse("2025-07-09T10:36:17"); //formato padrao
+		System.out.println("local "+dataLocal1);
+		System.out.println("local "+dataLocal2);
+		
+		//datas global
+		Instant dataGlobal1 = Instant.parse("2025-07-09T10:38:27Z");
+		System.out.println("global "+dataGlobal1);
+		
+		//formatacao
+		
+		DateTimeFormatter formatacaoLocal = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println("formatada dataLocal1: "+ formatacaoLocal.format(dataLocal1));
+
+		
+		//formata datas globaias precisa passar a zona do fuso horario
+		DateTimeFormatter dataGlobalFormatacao1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());//pego a zona do meu computador
+		DateTimeFormatter dataGlobalFormatacao1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm+03:00");//pego a zona do meu computador
+		System.out.println("formatação global1:"+dataGlobalFormatacao1);
+	
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+		System.out.println("Informe o valor do raio:");
+		Scanner sc = new Scanner(System.in);
+		double raio = sc.nextDouble();
+
+		double area = 3.14156 * (Math.pow(raio, 2));
+		System.out.println("A:"+area);
+		sc.close();
+	}
+
+}

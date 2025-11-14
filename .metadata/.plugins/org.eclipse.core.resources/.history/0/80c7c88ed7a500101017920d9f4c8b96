@@ -1,0 +1,17 @@
+package generics_179;
+
+public class PrintServices {
+
+	public void addValue(int value) {
+		
+	}
+	
+	public int first() {
+		return 0;
+	}
+	
+	public void print() {
+		
+	}
+	
+}

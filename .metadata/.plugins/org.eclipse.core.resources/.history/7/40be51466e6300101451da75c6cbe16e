@@ -1,0 +1,7 @@
+package entites;
+
+public class ProdutoImportado extends Produto {
+
+	private Double taxaPersonalizada;
+	
+}

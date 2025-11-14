@@ -1,0 +1,22 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DataHoraFormatacao {
+	public static void main(String[] args) {
+		
+		LocalDate d04 = LocalDate.parse("2022-07-20");
+		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
+		
+		DateTimeFormatter formatacao = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter formatacao2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm);
+		
+		System.out.println(formatacao);
+		System.out.println(d04.format(formatacao));
+		System.out.println(formatacao.format(d04));
+	}
+}

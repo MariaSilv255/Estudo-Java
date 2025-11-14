@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio4 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		System.out.print("Numero do funcionario:");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double num = sc.nextDouble();
+		System.out.print("Horas trabalhadas");
+		double hora = sc.nextDouble();
+		
+		System.out.print("valor por hora trabalhadas");
+		double valor = sc.nextDouble();
+		
+		System.out.println("Number:"+num);
+		System.out.println("salario:"+hora*valor);
+		
+		sc.close();
+		
+
+	}
+
+}

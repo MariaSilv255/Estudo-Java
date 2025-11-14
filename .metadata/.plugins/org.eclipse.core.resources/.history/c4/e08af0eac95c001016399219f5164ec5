@@ -1,0 +1,22 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class organizando_as_ideaias {
+	public static void main(String[] args) {
+		
+		//no formato iso 8601
+		//datas local
+		LocalDate dataLocal1 = LocalDate.parse("2025-07-09"); //formato padrao
+		LocalDateTime dataLocal2 = LocalDateTime.parse("2025-07-09T10:36:17"); //formato padrao
+		System.out.println("local"+dataLocal1);
+		System.out.println("local"+dataLocal2);
+		
+		//datas global
+		Instant dataGlobal1 = Instant.parse("2025-07-09Z");
+		System.out.println(dataLocal2);
+
+	}
+}

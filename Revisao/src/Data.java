@@ -1,0 +1,35 @@
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class Data {
+	public static void main(String[] args) {
+		// EXEMPLO LOCAL
+
+		// Aqui posso deixar o formato que eu quero para data podendo colocar data e
+		// hora
+		DateTimeFormatter formatacao = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+		// usando o formatação no local posso fazer ele aceitar outra formato fora do
+		// padrao iso
+		LocalDate dataPadraoISO = LocalDate.parse("01/10/2025", formatacao);
+		/*
+		 * para exibir o formato que desejo e so adicionar o format junto com formate
+		 * saida: 10/01/2025 sem formate saida: 2025-01-10
+		 */
+		System.out.println(dataPadraoISO.format(formatacao));
+
+		//adicionei a zona do meu fuso horario que pega pelo sistema
+		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
+		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
+
+		Instant d06 = Instant.parse("2025-07-21T11:39:26Z");
+
+		System.out.println("d06 = " + fmt3.format(d06));
+		System.out.println("d06 = " + fmt5.format(d06));
+		System.out.println("d06 = " + d06.toString());
+
+	}
+}

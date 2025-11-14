@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="selection" value=""/>
+		<item key="replaceBarOpen" value="true"/>
+		<list key="findhistory">
+			<item value="Locale.setDefault(Locale.US);"/>
+			<item value="Product"/>
+			<item value="Produc"/>
+			<item value="name"/>
+			<item value=""/>
+		</list>
+		<list key="replacehistory">
+			<item value="Produto"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1044"/>
+		<item key="DIALOG_Y_ORIGIN" value="396"/>
+	</section>
+</section>

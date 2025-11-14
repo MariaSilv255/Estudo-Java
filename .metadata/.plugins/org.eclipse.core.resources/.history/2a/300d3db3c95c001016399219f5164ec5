@@ -1,0 +1,12 @@
+package data_hora;
+
+import java.time.LocalDate;
+
+public class organizando_as_ideaias {
+	public static void main(String[] args) {
+		//no formato iso 8601
+		LocalDate data1 = LocalDate.parse("2025-07-09");
+		System.out.println(data1);
+
+	}
+}

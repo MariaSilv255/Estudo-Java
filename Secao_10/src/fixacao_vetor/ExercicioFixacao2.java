@@ -1,0 +1,35 @@
+package fixacao_vetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioFixacao2 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Quantos numeros vc quer digitar?");
+		int n = sc.nextInt();
+
+		double[] vect = new double[n];
+
+		double soma = 0.0;
+
+		for (int i = 0; i < vect.length; i++) {
+			System.out.println("digite um nuemro");
+			vect[i] = sc.nextDouble();
+		}
+		System.out.println("VALORES:");
+		for (int i = 0; i < vect.length; i++) {
+			System.out.print(String.format("%.1f ", vect[i]));
+			soma += vect[i];
+		}
+
+		double media = soma / n;
+		System.out.println("media:" + media);
+		System.out.println("soma:" + soma);
+		sc.close();
+	}
+
+}

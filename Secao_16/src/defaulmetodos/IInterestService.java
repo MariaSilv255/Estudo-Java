@@ -1,0 +1,19 @@
+package defaulmetodos;
+
+import java.security.InvalidParameterException;
+
+public interface IInterestService {
+
+	
+	double getInterestRate();
+	
+	default double paymente(double amount, int months) {
+		
+		if(months < 1) {
+		throw new InvalidParameterException("mes nao pode ser menor que 1");
+	
+	}
+		return  amount * Math.pow(1.0+getInterestRate() / 100.0, months);
+	}
+	
+}

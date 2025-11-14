@@ -1,0 +1,10 @@
+import java.time.LocalDate;
+
+public class Data {
+	public static void main(String[] args) {
+		
+		LocalDate dataPadraoISO= LocalDate.parse("");
+		System.out.println(dataPadraoISO);
+		
+	}
+}

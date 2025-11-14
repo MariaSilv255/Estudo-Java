@@ -1,0 +1,7 @@
+package data_hora;
+
+public class GlobalParaLocal {
+	public static void main(String[] args) {
+		
+	}
+}

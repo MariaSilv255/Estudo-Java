@@ -1,0 +1,10 @@
+package defaulmetodos;
+
+public interface IInterestService {
+
+	
+	double getInterestRate();
+	
+	double paymente(double amount, int months);
+	
+}

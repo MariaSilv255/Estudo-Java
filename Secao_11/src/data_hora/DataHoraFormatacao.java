@@ -1,0 +1,34 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class DataHoraFormatacao {
+	public static void main(String[] args) {
+		
+		LocalDate d04 = LocalDate.parse("2022-07-20");
+		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
+		
+		// https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
+		
+		DateTimeFormatter formatacao = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter formatacao2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter formatacao3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());//pego o fuso horario do computador local
+		
+		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
+		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
+
+				
+		System.out.println(formatacao);
+		System.out.println(d04.format(formatacao));
+		System.out.println(formatacao.format(d04));
+		
+		System.out.println(formatacao3.format(d06));
+		
+		
+	}
+}

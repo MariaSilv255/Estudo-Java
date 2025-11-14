@@ -1,0 +1,33 @@
+package fixacao;
+
+public class Funcionario implements Comparable<Funcionario> {
+
+	private String name;
+	private int salario;
+
+	public Funcionario() {
+
+	}
+
+	public Funcionario(String name, int salario) {
+		this.name = name;
+		this.salario = salario;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getSalario() {
+		return salario;
+	}
+
+	public void setSalario(int salario) {
+		this.salario = salario;
+	}
+
+}

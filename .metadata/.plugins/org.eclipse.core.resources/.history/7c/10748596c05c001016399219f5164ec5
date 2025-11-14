@@ -1,0 +1,22 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+
+public class GlobalParaLocal {
+	public static void main(String[] args) {
+
+		LocalDate d1 = LocalDate.parse("2022-02-01");
+		Instant d2 = Instant.parse("2022-02-01T01:30:26Z");
+		
+		for (String s : ZoneId.getAvailableZoneIds()) {
+			
+		}
+		
+		LocalDate r1 = LocalDate.ofInstant(d2,ZoneId.systemDefault());
+		LocalDate r2 = LocalDate.ofInstant(d2,ZoneId.of("Portugal"));
+		System.out.println(r1);
+		
+	}
+}

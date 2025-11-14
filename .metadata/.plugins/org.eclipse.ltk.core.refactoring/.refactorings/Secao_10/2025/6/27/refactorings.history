@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;vetor.desafio_pesionista&apos; to &apos;DesafioPensionato&apos;&#x0D;&#x0A;- Original project: &apos;Secao_10&apos;&#x0D;&#x0A;- Original element: &apos;vetor.desafio_pesionista&apos;&#x0D;&#x0A;- Renamed element: &apos;vetor.DesafioPensionato&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;desafio_pesionista&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;vetor{desafio_pesionista.java[desafio_pesionista" matchStrategy="1" name="DesafioPensionato" qualified="false" references="true" similarDeclarations="false" stamp="1751207815901" textual="false" version="1.0"/>
+</session>

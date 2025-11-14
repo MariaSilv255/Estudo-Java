@@ -1,0 +1,25 @@
+package application;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import entities.Comentario;
+import entities.Post;
+
+public class Postagem {
+	public static void main(String[] args) {
+
+		Comentario comentario1 = new Comentario("Faça uma boa viagem!");
+		Comentario comentario2 = new Comentario("Woooow");
+		
+		DateTimeFormatter formatacao = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		LocalDateTime data = LocalDateTime.parse("21/06/2018 13:05:44",formatacao);
+		
+		Post post = new Post(data, "Viajando para Nova Zelândia", "Vou visitar esse país maravilhoso!",12);
+		post.addComentario(comentario1);
+		post.addComentario(comentario2);
+
+		System.out.println(post.toString());
+		
+	}
+}

@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileRead_bufferedReader {
+	public static void main(String[] args) {
+
+		String pasta = "E:\\ESTUDO\\sEstudo_Java\\java\\arquivoAulaFIle.txt";
+
+		try (BufferedReader br = new BufferedReader(new FileReader(pasta))) {
+			// leio uma linha se o realine tive na ultima linha ele retorna nulo
+			String line = br.readLine();
+
+			// assim ele le todas as linhas
+			while (line != null) {
+				System.out.println(line);
+				line = br.readLine();
+			}
+		} catch (IOException e) {
+			System.out.println("Erro:" + e.getMessage());
+		}
+
+	}
+}

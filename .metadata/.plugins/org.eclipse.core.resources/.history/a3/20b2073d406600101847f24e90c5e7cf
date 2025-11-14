@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class Data {
+	public static void main(String[] args) {
+		// EXEMPLO LOCAL
+
+		// Aqui posso deixar o formato que eu quero para data podendo colocar data e
+		// hora
+		DateTimeFormatter formatacao = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+		// usando o formatação no local posso fazer ele aceitar outra formato fora do
+		// padrao iso
+		LocalDate dataPadraoISO = LocalDate.parse("01/10/2025", formatacao);
+		// para exibir o formato que desejo e so adicionar o format junto
+		System.out.println(dataPadraoISO.format(formatacao));
+
+	}
+}

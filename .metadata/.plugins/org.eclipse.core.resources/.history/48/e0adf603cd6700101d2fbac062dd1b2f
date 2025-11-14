@@ -1,0 +1,13 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class FileRead_bufferedReader {
+	public static void main(String[] args) {
+		
+		String pasta = "E:\\ESTUDO\\Estudo_Java\\java";
+		FileReader fr = null;
+		BufferedReader br = null;
+		
+		
+	}
+}

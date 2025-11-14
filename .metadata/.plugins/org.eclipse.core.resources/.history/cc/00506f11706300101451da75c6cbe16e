@@ -1,0 +1,7 @@
+package entites;
+
+import java.time.LocalDateTime;
+
+public class ProdutoUsado {
+private LocalDateTime date;
+}

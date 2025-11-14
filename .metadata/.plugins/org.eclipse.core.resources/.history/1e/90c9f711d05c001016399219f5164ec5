@@ -1,0 +1,50 @@
+package data_hora;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
+public class organizando_as_ideaias {
+	public static void main(String[] args) {
+
+		// pegando a data e hora agr
+		LocalDate d01 = LocalDate.now();
+		LocalDateTime d02 = LocalDateTime.now();
+		Instant d03 = Instant.now();
+		System.out.println(d01);
+		System.out.println(d02);
+		System.out.println(d03);
+
+		// no formato iso 8601 passando uma data
+		// datas local
+		LocalDate dataLocal1 = LocalDate.parse("2025-07-09"); // formato padrao
+		LocalDateTime dataLocal2 = LocalDateTime.parse("2025-07-09T10:36:17"); // formato padrao
+		System.out.println("local " + dataLocal1);
+		System.out.println("local " + dataLocal2);
+
+		// datas global
+		Instant dataGlobal1 = Instant.parse("2025-07-09T10:38:27Z");
+		System.out.println("global " + dataGlobal1);
+
+		// formatacao local
+
+		DateTimeFormatter formatacaoLocal = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		DateTimeFormatter formatacaoLoca2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		System.out.println("formatada dataLocal1: " + formatacaoLocal.format(dataLocal1));
+		System.out.println("formatada dataLocal2: " + formatacaoLoca2.format(dataLocal2));
+
+		// formatacao datas globaias
+		//na formatacao precisa passar qual fuso horario a data ira ter
+		DateTimeFormatter dataGlobalFormatacao1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")
+				.withZone(ZoneId.systemDefault());// pego a zona do meu computador
+		System.out.println("formatação global1:" + dataGlobalFormatacao1.format(dataGlobal1));
+
+		
+		//formatando data global para local
+		Instant global1 = Instant.parse("2025-07-19T12:38:27Z");
+	LocalDate dataformatacaoGlobal = LocalDate.ofInstant(global1, ZoneId.of("portugal"));
+		
+	}
+}

@@ -1,0 +1,9 @@
+package defaulmetodos;
+
+import java.util.Locale;
+
+public class programa {
+
+	Locale.setDefault(Locale.US);
+	
+}

@@ -1,0 +1,35 @@
+package fixacao_vetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicioFixacao3 {
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+		String nome[] = new String[n];
+		int idade[] = new int[n];
+		double altura[] = new double[n];
+
+		for (int i = 1; i < n; i++) {
+			System.out.println(String.format("Dados da %d a pessoa", i));
+			System.out.println("Nome:");
+			nome[i - 1] = sc.nextLine();
+			sc.nextLine();
+			System.out.println("idade:");
+			idade[i - 1] = sc.nextInt();
+			System.out.println("altura:");
+			altura[i - 1] = sc.nextDouble();
+		}
+		for (int i = 0; i < altura.length; i++) {
+			System.out.println(nome[i]);
+			System.out.println(idade[i]);
+			System.out.println(altura[i]);
+			System.out.println("-------------");
+			
+		}
+	}
+}
