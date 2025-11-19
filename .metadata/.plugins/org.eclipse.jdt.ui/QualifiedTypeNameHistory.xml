@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="entites.Produto"/>
-    <fullyQualifiedTypeName name="entites.enums.StatusPedido"/>
-    <fullyQualifiedTypeName name="entites.Cliente"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="entites.ItemPedido"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="entites.Pedido"/>
     <fullyQualifiedTypeName name="exemplo.Account"/>
@@ -49,7 +43,6 @@
     <fullyQualifiedTypeName name="java.security.InvalidParameterException"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="defaulmetodos.BraziLInterestService"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="generics_delimitados.Produto"/>
     <fullyQualifiedTypeName name="generics_delimitados.calculationService"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="secao_18.Produto"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="exercicio.FilterSum"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
+    <fullyQualifiedTypeName name="exercicio.Produto"/>
 </qualifiedTypeNameHistroy>

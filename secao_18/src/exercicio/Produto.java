@@ -1,4 +1,4 @@
-package secao_18;
+package exercicio;
 
 public class Produto {
 	private String nome;
