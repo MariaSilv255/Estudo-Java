@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="entites.Pedido"/>
-    <fullyQualifiedTypeName name="exemplo.Account"/>
-    <fullyQualifiedTypeName name="entities.Formato"/>
     <fullyQualifiedTypeName name="entities.Retangulo"/>
     <fullyQualifiedTypeName name="entities.enums.Color"/>
     <fullyQualifiedTypeName name="entities.circulo"/>
@@ -49,7 +45,6 @@
     <fullyQualifiedTypeName name="generics_179.PrintServices"/>
     <fullyQualifiedTypeName name="generics_179.PrintServices_com_generics"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="generics_delimitados.Produto"/>
     <fullyQualifiedTypeName name="generics_delimitados.calculationService"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="exercicio.Produto"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>
