@@ -4,3 +4,4 @@ org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
 org.eclipse.jdt.core.compiler.compliance=21
 org.eclipse.jdt.core.compiler.release=enabled
 org.eclipse.jdt.core.compiler.source=21
+org.eclipse.jdt.core.userLibrary.MySQLConnector=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="F\:/ESTUDO/Estudo_Java/DriveJDBC/mysql-connector-java-5.1.47.jar"/>\r\n</userlibrary>\r\n
