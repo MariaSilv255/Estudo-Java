@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 public class DB {
@@ -28,20 +30,22 @@ public class DB {
 
 	/*
 	 * metodo que inicializa a conexão com o banco
-	 * */
+	 */
 	public static Connection getConnection() {
 
-		if (conn == null) {//verifica se a conexao ja foi criada
-			
+		if (conn == null) {// verifica se a conexao ja foi criada
+
 			try {
-				Properties props = loadProperties(); //carrega os dados de db.propries
-				String url = props.getProperty("dburl"); //ler o caminho do meu banco na url
-				
-				/*abre a conexao do banco passando a url que é o caminho e o  objeto propries contem as informações de user e password 
-				 * o drivemanager usar essas informações para autenticar.
-				 * */
-				
-				conn = DriverManager.getConnection(url, props); 
+				Properties props = loadProperties(); // carrega os dados de db.propries
+				String url = props.getProperty("dburl"); // ler o caminho do meu banco na url
+
+				/*
+				 * abre a conexao do banco passando a url que é o caminho e o objeto propries
+				 * contem as informações de user e password o drivemanager usar essas
+				 * informações para autenticar.
+				 */
+
+				conn = DriverManager.getConnection(url, props);
 			} catch (SQLException e) {
 				throw new DbException(e.getMessage());
 			}
@@ -58,6 +62,27 @@ public class DB {
 				throw new DbException(e.getMessage());
 			}
 
+		}
+	}
+	
+
+	public static void closeStatement(Statement st) {
+		if (st != null) {
+			try {
+				st.close();
+			} catch (SQLException e) {
+				throw new DbException(e.getMessage());
+			}
+		}
+	}
+	
+	public static void closeResultSet(ResultSet rs) {
+		if (rs != null) {
+			try {
+				rs.close();
+			} catch (SQLException e) {
+				throw new DbException(e.getMessage());
+			}
 		}
 	}
 
